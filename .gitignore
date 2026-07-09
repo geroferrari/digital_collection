@@ -1,0 +1,19 @@
+# --- Your personal collection: descriptions, photos, everything private ---
+# This is the whole point of this .gitignore: your real data never gets
+# pushed to GitHub. Only the 2 sample entries in examples/ are tracked.
+data/items.json
+static/uploads/*
+!static/uploads/.gitkeep
+
+# --- Python / uv ---
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- OS clutter ---
+.DS_Store
+Thumbs.db
+
+# --- Backups / archives ---
+*.zip

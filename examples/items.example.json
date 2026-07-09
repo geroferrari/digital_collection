@@ -1,0 +1,28 @@
+[
+  {
+    "id": "example-1",
+    "tipo": "camiseta",
+    "club": "Club Atlético Ejemplo",
+    "temporada": "1998/99",
+    "jugador": "10 - Ejemplo",
+    "talla": "M",
+    "origen": "",
+    "adquirido": "2020-05-10",
+    "historia": "Sample entry — this is placeholder data shown as an example. Replace it with your own pieces once you run the app.",
+    "foto": "jersey-example.jpg",
+    "createdAt": "2026-01-01T12:00:00"
+  },
+  {
+    "id": "example-2",
+    "tipo": "bufanda",
+    "club": "Deportivo Modelo",
+    "temporada": "2005",
+    "jugador": "",
+    "talla": "",
+    "origen": "Bought at the stadium",
+    "adquirido": "2021-11-03",
+    "historia": "Sample entry — this is placeholder data shown as an example. Replace it with your own pieces once you run the app.",
+    "foto": "scarf-example.jpg",
+    "createdAt": "2026-01-02T12:00:00"
+  }
+]

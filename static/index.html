@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Museo de Futbol</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Museo de Futbol</h1>
+      <p class="subtitle">Colección de Guille y Gero</p>
+      <p class="sub">Cada pieza colgada en la pared tiene una historia. Este es el catálogo digital de la colección — con foto, ficha técnica y la historia detrás de cada camiseta y bufanda.</p>
+      <div class="stats">
+        <div class="stat"><div class="num" id="stat-total">0</div><div class="lbl">Piezas</div></div>
+        <div class="stat"><div class="num" id="stat-camisetas">0</div><div class="lbl">Camisetas</div></div>
+        <div class="stat"><div class="num" id="stat-bufandas">0</div><div class="lbl">Bufandas</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="toolbar-card">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-filter="todos">Todos</button>
+        <button class="tab" data-filter="camiseta">Camisetas</button>
+        <button class="tab" data-filter="bufanda">Bufandas</button>
+      </div>
+      <button class="add-btn" id="open-add">+ Añadir pieza</button>
+    </div>
+    <div class="toolbar-card toolbar-row2">
+      <button class="filters-btn" id="open-filters">🔍 Filtros<span class="filters-badge" id="filters-badge" hidden>0</span></button>
+      <select id="sort-select" class="sort-select">
+        <option value="reciente">Más recientes</option>
+        <option value="alfabetico">Club (A-Z)</option>
+        <option value="temporada">Temporada / año</option>
+        <option value="adquirido">Fecha de adquisición</option>
+      </select>
+      <div class="view-toggle" id="view-toggle">
+        <button class="view-btn active" data-view="gallery">🖼 Galería</button>
+        <button class="view-btn" data-view="timeline">📅 Línea de tiempo</button>
+        <button class="view-btn" data-view="map">🗺 Mapa</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery-wrap"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
